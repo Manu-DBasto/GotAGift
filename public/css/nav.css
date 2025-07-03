@@ -1,0 +1,111 @@
+/* Estilos generales del navbar */
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background-color: #3b3b3b !important;
+    /* background: linear-gradient(to right, #903f76, #edafd9); */
+}
+
+/* Estilo del logo */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Estilos del menú */
+.navbar-nav .nav-item .nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-radius: 5px;
+    color: gray !important;
+}
+
+/* Estilos del botón de hamburguesa */
+.navbar-toggler {
+    border: none;
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+/* Estilos del Offcanvas */
+.offcanvas {
+    width: 250px !important;
+}
+
+.offcanvas-header {
+    background-color: #3b3b3b;
+}
+
+.offcanvas-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white !important ;
+}
+
+.offcanvas-body {
+    background-color: #3b3b3b;
+}
+
+/* Botón de información */
+
+/* Estilos del botón cerrar sesión */
+.offcanvas-body .btn-warning {
+    height: 48px;
+    border: none;
+    font-size: 18px;
+}
+
+/* Iconos en blanco */
+i {
+    color: white;
+}
+
+body {
+    /* background-color: #fcedff !important; */
+    background: linear-gradient(to bottom, #fadcfb, #fff);
+    min-height: 100vh;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: #3b3b3b !important;
+}
+
+/* Ajustes específicos para pantallas grandes y móviles */
+@media (max-width: 991px) {
+    /* Modo móvil */
+    .offcanvas {
+        width: 250px !important; /* Ajuste de tamaño del offcanvas */
+    }
+
+    .offcanvas-body {
+        background-color: #727272;
+    }
+}
+
+@media (min-height: 100vh) {
+    body {
+        /* background-color: #fcedff !important; */
+        background: linear-gradient(to bottom, #fadcfb, #fff);
+        height: 100%;
+    }
+}
